@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\andre\\3D Objects\\parcial 3 nov\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{DDDBA773-5A07-4A6E-BBBD-D0E1146B8320}|parcial 3 nov\\parcial 3 nov.vcxproj|C:\\Users\\andre\\3D Objects\\parcial 3 nov\\parcial 3 nov\\parcial 3 nov.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{DDDBA773-5A07-4A6E-BBBD-D0E1146B8320}|parcial 3 nov\\parcial 3 nov.vcxproj|solutionrelative:parcial 3 nov\\parcial 3 nov.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "parcial 3 nov.cpp",
+              "DocumentMoniker": "C:\\Users\\andre\\3D Objects\\parcial 3 nov\\parcial 3 nov\\parcial 3 nov.cpp",
+              "RelativeDocumentMoniker": "parcial 3 nov\\parcial 3 nov.cpp",
+              "ToolTip": "C:\\Users\\andre\\3D Objects\\parcial 3 nov\\parcial 3 nov\\parcial 3 nov.cpp",
+              "RelativeToolTip": "parcial 3 nov\\parcial 3 nov.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-11-03T03:29:35.8Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
