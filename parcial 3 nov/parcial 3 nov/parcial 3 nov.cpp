@@ -2,7 +2,7 @@
 #include <string>
 using namespace std;
 
-// Función para calcular el total ganado
+
 int calcularTotal(int distancia[], int costo[], int numViajes) {
     int total = 0;
     for (int i = 0; i < numViajes; i++) {
@@ -11,7 +11,7 @@ int calcularTotal(int distancia[], int costo[], int numViajes) {
     return total;
 }
 
-// Función para calcular el promedio de distancia
+
 int calcularPromedio(int distancia[], int numViajes) {
     int suma = 0;
     for (int i = 0; i < numViajes; i++) {
@@ -21,8 +21,8 @@ int calcularPromedio(int distancia[], int numViajes) {
 }
 
 int main() {
-    int cantidadConductores;
 
+    int cantidadConductores;
     cout << "Ingrese la cantidad de conductores (maximo 10): ";
     cin >> cantidadConductores;
 
@@ -36,7 +36,7 @@ int main() {
     int promedioDistancia[10];
 
     for (int i = 0; i < cantidadConductores; i++) {
-        cout << "\nCONDUCTOR #" << i + 1 << endl;
+        cout << "\n=== CONDUCTOR #" << i + 1 << " ===" << endl;
         cout << "Nombre: ";
         cin >> nombres[i];
 
@@ -53,10 +53,10 @@ int main() {
         int costo[10];
 
         for (int j = 0; j < numViajes; j++) {
-            cout << "\nViaje #" << j + 1 << endl;
-            cout << "Distancia (km): ";
+            cout << "\nViaje #" << j + 1 << ": " << endl;
+            cout << "   Distancia (km): ";
             cin >> distancia[j];
-            cout << "Costo por km: ";
+            cout << "   Costo por km ($): ";
             cin >> costo[j];
         }
 
@@ -64,12 +64,29 @@ int main() {
         promedioDistancia[i] = calcularPromedio(distancia, numViajes);
     }
 
-    cout << "\nRESULTADOS\n";
+
+    cout << "\n_______ historial de viajes   ________" << endl;
+    cout << "Conductor\tTotal Ganado ($)\tPromedio Distancia (km)" << endl;
+    cout << "-----------------------------------------------------------" << endl;
+
     for (int i = 0; i < cantidadConductores; i++) {
-        cout << "\nConductor: " << nombres[i] << endl;
-        cout << "Total ganado: $" << totalGanado[i] << endl;
-        cout << "Promedio distancia: " << promedioDistancia[i] << " km" << endl;
+        cout << nombres[i] << "\t\t" << totalGanado[i] << "\t\t"
+            << promedioDistancia[i] << endl;
     }
+
+    int mayor = totalGanado[0];
+    int indiceMayor = 0;
+
+    for (int i = 1; i < cantidadConductores; i++) {
+        if (totalGanado[i] > mayor) {
+            mayor = totalGanado[i];
+            indiceMayor = i;
+        }
+    }
+
+    cout << "\nEl conductor con mayor ingreso fue: "
+        << nombres[indiceMayor] << " con $" << mayor << endl;
+    cout << "--------------------------------------------------------------" << endl;
 
     return 0;
 }
